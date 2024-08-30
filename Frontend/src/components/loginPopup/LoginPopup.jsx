@@ -24,7 +24,7 @@ const LoginPopup = ({ setShowLogin }) => {
 
     const onLogin = async(event)=>{
         event.preventDefault();
-        let newUrl = 'http://localhost:5000'
+        let newUrl = 'https://farm-fresh-backend.onrender.com'
         if(currState === "login"){
             newUrl+="/api/user/login"
         }else{
