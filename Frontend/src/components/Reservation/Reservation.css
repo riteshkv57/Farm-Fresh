@@ -1,0 +1,118 @@
+/* Feedback Section Styling */
+.feedback {
+  background: linear-gradient(135deg, #f3f3f3, #e2e2e2);
+  padding: 50px 0;
+}
+
+.feedback .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.banner img {
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feedback_form_box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.feedback_form_box h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.feedback_form_box p {
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #777;
+}
+
+.feedback_form_box form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.feedback_form_box input,
+.feedback_form_box select,
+.feedback_form_box textarea {
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background: #f9f9f9;
+  transition: border 0.3s ease;
+}
+
+.feedback_form_box input:focus,
+.feedback_form_box select:focus,
+.feedback_form_box textarea:focus {
+  border-color: #57ba98;
+  outline: none;
+}
+
+.feedback_form_box textarea {
+  height: 100px;
+  resize: none;
+}
+
+.feedback_form_box button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  background: #57ba98;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.feedback_form_box button:hover {
+  background: #3da582;
+}
+
+.feedback_form_box button span {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.feedback_form_box button svg {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .feedback .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner img {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .feedback_form_box {
+    width: 100%;
+    max-width: 400px;
+  }
+}

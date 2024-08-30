@@ -1,0 +1,32 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+
+.navbar .logo{
+    width: max(10%,80px);
+}
+
+.navbar .profile{
+    width: 40px;
+}
+
+.navbar-right{
+    position: relative;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-profile{
+    position: relative;
+}
+.nav-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}

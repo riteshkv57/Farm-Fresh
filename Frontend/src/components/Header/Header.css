@@ -1,0 +1,135 @@
+.header {
+    height: 30vw;
+    margin: 30px auto;
+    background-image: url('../../../farmer_image.jpg');
+    background-size: 60% auto;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    position: relative;
+    /* border-radius: 20px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.header-contents {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: right;
+    gap: 1.5vw;
+    max-width: 70%;
+    /* bottom: 10%;
+    left: 6vw; */
+    padding: 5vw 6vw;
+    animation: fadeIn 3s;
+    transition: ease-in-out;
+}
+
+.header-contents h2 {
+    font-weight: 500;
+    color: rgb(0, 225, 255);
+    font-size: max(4.5vw, 22px);
+}
+
+.header-contents p {
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+}
+
+.header-contents button {
+    border: none;
+    color: #060606;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 1vw 2.3vw;
+    font-size: max(1vw, 13px);
+    background-color: white;
+    border-radius: 50px;
+}
+.header-contents button:hover {  
+    color: white; 
+    cursor: pointer;
+    background-color: #000000;
+}
+
+.header-contents span{
+    color: rgb(0, 255, 251);
+}
+
+
+.plate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: antiquewhite; */
+    background-image: url('../../../public/farmer.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+    max-width: 90%;
+    height: 50vw;
+    width: 62vw;
+    /* border-radius: 50%; */
+    /* animation: animatePlate 30s linear forwards infinite; */
+}
+
+.plate .food {
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.food img {
+    position: relative;
+    z-index: -23;
+    width: 26vw;
+    height: 26vw;
+}
+
+/* .header img{
+    animation: animatePlate 30s linear  infinite forwards;
+    width: 80%;
+    
+} */
+
+@keyframes animatePlate {
+    to {
+        transform: rotate(720deg);
+    }
+}
+
+@media (max-width:1050px) {
+    .header-contents {
+        max-width: 65%;
+    }
+}
+
+@media (max-width:750px) {
+    .header-contents {
+        max-width: 65%;
+    }
+
+    .header-contents p {
+        display: none;
+    }
+
+    .header-contents button {
+        padding: 2vw 4vw;
+    }
+}
+
+@media (max-width:480px) {
+    .header-contents h2 {
+        font-size: 14px;
+    }
+
+    .header-contents button {
+        padding: 1.5vw 3vw;
+    }
+}
