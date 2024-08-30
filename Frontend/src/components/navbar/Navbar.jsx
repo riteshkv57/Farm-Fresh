@@ -26,7 +26,7 @@ const Navbar = ({setShowLogin}) => {
             <Link to={"/"} onClick={()=>setMenu("Home")} className={menu === "Home"?"active":""}>Home</Link>
             <a href='#explore-menu' onClick={()=>setMenu("Menu")} className={menu === "Menu"?"active":""}>Harvests</a>
             <a href='#feedback' onClick={()=>setMenu("feedback")} className={menu === "feedback"?"active":""}>Ratings</a>
-            <a href='http://localhost:5174' onClick={()=>setMenu("reservation")} className={menu === "reservation"?"active":""}>Admin</a>
+            <a href='https://farm-fresh-adm.onrender.com' onClick={()=>setMenu("reservation")} className={menu === "reservation"?"active":""}>Admin</a>
             <a href='#footer' onClick={()=>setMenu("Contact-Us")} className={menu === "Contact-Us"?"active":""}>Contact Us</a>
         </ul>
         <div className="navbar-right">
